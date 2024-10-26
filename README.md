@@ -19,7 +19,7 @@ If '>' sign is not followed by the sequence name, the program will exit informin
 The name must be input with no white signs before or within the name.
 After the name is detected program will assume that whatever follows is the sequence for comparison, but it will ignore or white signs, whether that be a space of a new line symbol.
 There are no requirements regarding the name outside of it being at least 1 sign long, whereas the sequence needs to be at least 5 symbols long. I honestly made that requirement just to play around with exceptions.
-### Input/Output files
+### Input Output files
 Once you have a dataset formatted to my programs requirements you will need to save it in a readable file.
 There are no requirements regarding the files name or extension, but if you want the program to work without the need to supply it with any extra arguments on launch you would need to save your data into a 'sequences.fasta' file and locate the file in the same directory as the Smith-Waterman.py file.
 The output file will be saved in the same directory as the Smith-Waterman.py and will be named 'output.txt' unless specified otherwise when launching the program.
