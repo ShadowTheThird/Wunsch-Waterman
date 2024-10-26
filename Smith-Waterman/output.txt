@@ -1,0 +1,196 @@
+loaded sequences are:
+>SEQUENCE1	AGCTTAGGCTACGTAGCT
+>SEQUENCE2	TCGGATCGTAGGCTTCAA
+the match score is 23:
+GGCTACGTA-GCT
+GGAT-CGTAGGCT
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE1	AGCTTAGGCTACGTAGCT
+>SEQUENCE3	GCTAGGCTATAGCTGGTCGA
+the match score is 36:
+GCTTAGGCTACGTAGCT
+GC-TAGGCTA--TAGCT
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE1	AGCTTAGGCTACGTAGCT
+>SEQUENCE4	TAGCTAGCTAGGCTTACGTA
+the match score is 38:
+AGCTTAGGC-TACGTA
+AGC-TAGGCTTACGTA
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE1	AGCTTAGGCTACGTAGCT
+>SEQUENCE5	CGTAGGCTAAGCTTAG
+the match score is 27:
+TAGGCTACGTAGCT
+TAGGCTA---AGCT
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE1	AGCTTAGGCTACGTAGCT
+>SEQUENCE6	TCGGATCAGGCTTCGACC
+the match score is 21:
+T-AGGCTACGTAGC
+TCAGGCTTCG-A-C
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE1	AGCTTAGGCTACGTAGCT
+>SEQUENCE7	GCTAAGGCTTACGTCAGGCA
+the match score is 36:
+GCTTAGGC-TACGT-A-GC
+GCTAAGGCTTACGTCAGGC
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE1	AGCTTAGGCTACGTAGCT
+>SEQUENCE8	TAGCGGATCGTAGCTTCGA
+the match score is 28:
+AGCTTAGGCTACGTAGCT
+AGC---GGAT-CGTAGCT
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE2	TCGGATCGTAGGCTTCAA
+>SEQUENCE3	GCTAGGCTATAGCTGGTCGA
+the match score is 21:
+CGTAGGCT-TCA
+C-TAGGCTAT-A
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE2	TCGGATCGTAGGCTTCAA
+>SEQUENCE4	TAGCTAGCTAGGCTTACGTA
+the match score is 23:
+CGTAGGCTT-C
+C-TAGGCTTAC
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE2	TCGGATCGTAGGCTTCAA
+>SEQUENCE5	CGTAGGCTAAGCTTAG
+the match score is 26:
+CGTAGGCTTCAA
+CGTAGGC-T-AA
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE2	TCGGATCGTAGGCTTCAA
+>SEQUENCE6	TCGGATCAGGCTTCGACC
+the match score is 39:
+TCGGATCGTAGGCTTC-A
+TCGGATC--AGGCTTCGA
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE2	TCGGATCGTAGGCTTCAA
+>SEQUENCE7	GCTAAGGCTTACGTCAGGCA
+the match score is 21:
+GG-AT-CGT-AGGC
+GGCTTACGTCAGGC
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE2	TCGGATCGTAGGCTTCAA
+>SEQUENCE8	TAGCGGATCGTAGCTTCGA
+the match score is 41:
+CGGATCGTAGGCTTC-A
+CGGATCGTA-GCTTCGA
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE3	GCTAGGCTATAGCTGGTCGA
+>SEQUENCE4	TAGCTAGCTAGGCTTACGTA
+the match score is 31:
+GCTAGGCTATAGCTGGT
+GCTAGGCT-TA-C--GT
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE3	GCTAGGCTATAGCTGGTCGA
+>SEQUENCE5	CGTAGGCTAAGCTTAG
+the match score is 32:
+GCTAGGCTATAGCT
+G-TAGGCTA-AGCT
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE3	GCTAGGCTATAGCTGGTCGA
+>SEQUENCE6	TCGGATCAGGCTTCGACC
+the match score is 24:
+GGCTAT-A-GCTGGTCGA
+GG--ATCAGGCT--TCGA
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE3	GCTAGGCTATAGCTGGTCGA
+>SEQUENCE7	GCTAAGGCTTACGTCAGGCA
+the match score is 33:
+GCT-AGGCTATAGCTGGTC-G
+GCTAAGGCT-TA-C--GTCAG
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE3	GCTAGGCTATAGCTGGTCGA
+>SEQUENCE8	TAGCGGATCGTAGCTTCGA
+the match score is 26:
+GCTAGGCT-ATAGCTGGTCGA
+GC--GGATCGTAGCT--TCGA
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE4	TAGCTAGCTAGGCTTACGTA
+>SEQUENCE5	CGTAGGCTAAGCTTAG
+the match score is 30:
+GCTA-GCTAGGCTTACG
+G-TAGGCTAAGCTTA-G
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE4	TAGCTAGCTAGGCTTACGTA
+>SEQUENCE6	TCGGATCAGGCTTCGACC
+the match score is 24:
+CTAGGCTTACGTA
+C-AGGCTT-CG-A
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE4	TAGCTAGCTAGGCTTACGTA
+>SEQUENCE7	GCTAAGGCTTACGTCAGGCA
+the match score is 38:
+GCT-AGGCTTACGT-A
+GCTAAGGCTTACGTCA
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE4	TAGCTAGCTAGGCTTACGTA
+>SEQUENCE8	TAGCGGATCGTAGCTTCGA
+the match score is 29:
+TAGC-TAGC-TAGGCTTACGTA
+TAGCGGATCGTA-GCTT-CG-A
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE5	CGTAGGCTAAGCTTAG
+>SEQUENCE6	TCGGATCAGGCTTCGACC
+the match score is 18:
+C-G-T-AGGCT
+CGGATCAGGCT
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE5	CGTAGGCTAAGCTTAG
+>SEQUENCE7	GCTAAGGCTTACGTCAGGCA
+the match score is 29:
+GCTAA-GCTTA-G
+GCTAAGGCTTACG
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE5	CGTAGGCTAAGCTTAG
+>SEQUENCE8	TAGCGGATCGTAGCTTCGA
+the match score is 21:
+TA--GG--C-TAAGCTT
+TAGCGGATCGT-AGCTT
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE6	TCGGATCAGGCTTCGACC
+>SEQUENCE7	GCTAAGGCTTACGTCAGGCA
+the match score is 22:
+AGGCTT-CG
+AGGCTTACG
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE6	TCGGATCAGGCTTCGACC
+>SEQUENCE8	TAGCGGATCGTAGCTTCGA
+the match score is 36:
+CGGATC--AGGCTTCGA
+CGGATCGTA-GCTTCGA
+-----------------------------------------------------------------------
+loaded sequences are:
+>SEQUENCE7	GCTAAGGCTTACGTCAGGCA
+>SEQUENCE8	TAGCGGATCGTAGCTTCGA
+the match score is 19:
+GCTAAGGCTTACG
+G-T-A-GCTT-CG
+-----------------------------------------------------------------------
