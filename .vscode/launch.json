@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            // "args": ["-m=1", "-g=-5"]
+            // "args": ["-f=fasta", "-g=-2"]
         }
     ]
 }
