@@ -1,13 +1,14 @@
 # by Michal Walach
 import argparse
 
+# case insensitive flag value collector for data format
 def format_type(text):
     text = text.lower()
     if text not in ["fasta","text"]:
         raise argparse.ArgumentError(f"invalid format '{text}'. Must be 'fasta' or 'text'.")
     return text.lower()
 
-# argument and flag 
+# acceptable flags and their default values
 modifiers = argparse.ArgumentParser(description="Set values for match, mismatch and gap accordingly")
 modifiers.add_argument("-m", "--match", type = int, default = 3, help = "Specify the value added on match")
 modifiers.add_argument("-s", "--missmatch", type = int, default = -3, help = "Specify the value added on missmatch")
@@ -22,17 +23,14 @@ gap = args.gap
 format = args.format
 output = args.output
 input = args.input
-# check
-# print(f"match: {args.match}")
-# print(f"missmatch: {args.missmatch}")
-# print(f"gap: {args.gap}")
 
-nucleotides = ['A','C','G','T']
-valid = 1
+# data collector from selected file
 with open(input, "r") as file:
     file_text = file.readlines()
+# formatting text to acquire usable data
 file_text = [sequence.strip().upper() for sequence in file_text]
 file_text = [sequence.split() for sequence in file_text]
+# spliting aquired data into sequences
 current_sequence = -1
 sequences = ["",""]
 names = ["",""]
@@ -46,24 +44,37 @@ for line in file_text:
             names[current_sequence] += segment[1:]
         else:
             sequences[current_sequence] += segment
-
+for name in names:
+    if name == "":
+        print("Provided data is invalid. Sequences for comparison must be provided and preceded by '>' sign with the name of the sequence and correct data format ('text' or 'fasta') must be selected ('text' by default)")
+        exit()
+for sequence in sequences:
+    if sequence == "":
+        print("Provided data is invalid. Sequences for comparison must be provided and preceded by '>' sign with the name of the sequence and correct data format ('text' or 'fasta') must be selected ('text' by default)")
+        exit()
+# check for fasta format if sequences are composed entirely of ACGT letters
 if format == "fasta":
+    nucleotides = ['A','C','G','T']
+    valid = 1
     for sequence in sequences:
         for letter in sequence:
             if letter not in nucleotides:
                 print("sequence contains invalid symbols")
                 valid = 0
                 break
+    # exit case if sequences had invalid symbols
     if not valid:
-        print("loaded sequences are invalid!\nexiting program")
+        print("Provided data is invalid. Sequences for comparison must be provided and preceded by '>' sign with the name of the sequence and correct data format ('text' or 'fasta') must be selected ('text' by default)")
         exit()
 
+# selection of sequences to be compared
 with open(output, 'w') as ofile:
     for seq1 in range(0,len(sequences)):
         for seq2 in range(seq1+1, len(sequences)):
             comparables = [sequences[seq1], sequences[seq2]]
             print(f"loaded sequences are:\n>{names[seq1]}\t{comparables[0]}\n>{names[seq2]}\t{comparables[1]}")
             ofile.write(f"loaded sequences are:\n>{names[seq1]}\t{comparables[0]}\n>{names[seq2]}\t{comparables[1]}\n")
+            # creation of matrix
             matrix = [[0] * (len(comparables[1]) + 1) for _ in range(len(comparables[0]) + 1)]
             highest_score = 0
             for row in range(1,len(matrix)):
@@ -78,22 +89,11 @@ with open(output, 'w') as ofile:
                             matrix[row][cell] = max(matrix[row-1][cell]+gap, matrix[row][cell-1]+gap, 0)
                         else:
                             matrix[row][cell] = max(matrix[row-1][cell-1]+missmatch, 0)
+                    # saving highest score for code optimization
                     if matrix[row][cell] > highest_score:
                         highest_score = matrix[row][cell]
                         highest_score_position = [row, cell]
-            # line = "X\t"
-            # for letter in comparables[1]:
-            #     line += "\t" + letter
-            # print(line)
-            # line = ""
-            # for position in range(0,len(comparables[0])):
-            #     line += "\t" + str(matrix[0][position])
-            # print(line)
-            # for position in range(0,len(comparables[0])):
-            #     line = comparables[0][position]
-            #     for cell in matrix[position+1]:
-            #         line += "\t" + str(cell)
-            #     print(line)
+            # searching for the match within the generated matrix using the highest recorded score as starting point
             current_score = highest_score; current_position = highest_score_position
             best_match = ["",""]
             while current_score > 0:
@@ -108,5 +108,6 @@ with open(output, 'w') as ofile:
                         current_position[1] -= 1
                         best_match[0] += "-"; best_match[1] += comparables[1][current_position[1]]
                 current_score = matrix[current_position[0]][current_position[1]]
+            # printing the found sequences in reverse order as they have been searched for and recorded from back to front
             print(f"the match score is {highest_score}:\n{best_match[0][::-1]}\n{best_match[1][::-1]}")
             ofile.write(f"the match score is {highest_score}:\n{best_match[0][::-1]}\n{best_match[1][::-1]}\n\n")
