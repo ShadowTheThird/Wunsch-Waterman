@@ -134,3 +134,4 @@ with open(output_file, 'w') as ofile:
             # printing the found sequences in reverse order as they have been searched for and recorded from back to front
             print(f"the match score is {highest_score}:\n{GREEN}{best_match[0][::-1]}\n{best_match[1][::-1]}\n{GREY}-----------------------------------------------------------------------{RESET}")
             ofile.write(f"the match score is {highest_score}:\n{best_match[0][::-1]}\n{best_match[1][::-1]}\n-----------------------------------------------------------------------\n")
+exit(0)

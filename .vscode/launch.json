@@ -4,6 +4,16 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        // {
+        //     "name": "Python Debugger: Current File",
+        //     "type": "debugpy",
+        //     "request": "launch",
+        //     "program": "E:\\Programowanie\\Helping_hand\\Algorytm\\main.py",
+        //     "console": "integratedTerminal",
+        //     "cwd": "E:\\Programowanie\\Helping_hand\\Algorytm",
+        //     // "args": ["-i=Smith-Waterman\\sequences.fasta", "-o=Smith-Waterman\\output.txt"]
+        // },
+
         {
             "name": "Python Debugger: Current File",
             "type": "debugpy",
