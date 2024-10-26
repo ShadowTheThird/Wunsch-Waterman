@@ -23,8 +23,8 @@ modifiers.add_argument("-m", "--match", type = int, default = 3, help = "Specify
 modifiers.add_argument("-s", "--missmatch", type = int, default = -3, help = "Specify the value added on missmatch")
 modifiers.add_argument("-g", "--gap", type = int, default = -2, help = "Specify the value added on gap")
 modifiers.add_argument("-f", "--format", type = format_type, default = "text", help = "Defines whether the program should check if loaded sequences consist of only nucletid symbols")
-modifiers.add_argument("-o", "--output", type = str, default = "Smith-Waterman\output.txt", help = "Sets the name of the output file and its directory")
-modifiers.add_argument("-i", "--input", type = str, default = "Smith-Waterman\sequences.fasta", help = "Sets the name of the input file and its directory")
+modifiers.add_argument("-o", "--output", type = str, default = "output.txt", help = "Sets the name of the output file and its directory")
+modifiers.add_argument("-i", "--input", type = str, default = "sequences.fasta", help = "Sets the name of the input file and its directory")
 args = modifiers.parse_args()
 match = args.match
 missmatch = args.missmatch
