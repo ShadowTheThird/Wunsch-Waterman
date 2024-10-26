@@ -1,5 +1,8 @@
->seq1 ur AGCTTAG    GCTACGT     AGCT
->seq2 ikTCGG
+>artificial_lung AGCTTAG    GCTACGT     AGCT
+>behemoth TCGG
 ATCGTAGGC
 TTCAA
->error
+>cucumba
+TGCTACGTAGGCTAGCTA
+>eldorado
+CGGATCGTACGATCGGCTA
