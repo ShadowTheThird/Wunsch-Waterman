@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "Smith-Waterman\\Smith-Waterman.py",
             "console": "integratedTerminal",
-            // "args": ["-f=fasta", "-g=-2"]
+            "args": ["-i=Smith-Waterman\\sequences.fasta", "-o=Smith-Waterman\\output.txt"]
         }
     ]
 }
