@@ -70,12 +70,7 @@ try:
         for sequence in sequences:
             for letter in sequence:
                 if letter not in nucleotides:
-                    print("sequence contains invalid symbols")
-                    valid = 0
-                    break
-        # exit case if sequences had invalid symbols
-        if not valid:
-            raise ValueError("Sequence contains invalid symbols. Only A, C, G, and T are allowed for fasta format.")
+                    raise ValueError("Sequence contains invalid symbols. Only A, C, G, and T are allowed for fasta format.")
 
 except FileNotFoundError:
     print(f"{RED}{BOLD}ERROR:{RESET}\t{DYELLOW}The file '{input_file}' was not found. Please check the file path.{RESET}")
